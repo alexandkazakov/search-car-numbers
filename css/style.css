@@ -1,28 +1,25 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .container {
-    padding-top: 50px;
+  padding-top: 50px;
 }
 
 .file-uploader-input {
-  width: 500px;
+  max-width: 500px;
 }
 
 .filter__form {
-    gap: 10px;
-}
-
-.visible {
-    opacity: 1;
-    visibility: visible;
-}
-
-.display-none {
-    display: none;
+  gap: 10px;
 }
 
 .badge {
   font-size: 14px;
+}
+
+@media (max-width: 576px) {
+  .filter__form {
+    flex-wrap: wrap;
+  }
 }
