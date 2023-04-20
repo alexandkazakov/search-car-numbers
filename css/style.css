@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    padding-top: 50px;
+}
+
+.file-uploader-input {
+  width: 500px;
+}
+
+.filter__form {
+    gap: 10px;
+}
+
+.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.display-none {
+    display: none;
+}
+
+.badge {
+  font-size: 14px;
+}

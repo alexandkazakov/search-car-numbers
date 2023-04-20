@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Поиск автомобильных номеров</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/style.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <script lang="javascript" src="https://cdn.sheetjs.com/xlsx-0.19.3/package/dist/xlsx.full.min.js"></script>
+  <script src="./js/index.js"></script>
+</head> 
+<body>
+  <div class="container">
+    <h1 class="title mb-4">Поиск автомобильных номеров</h1>
+    <div class="file-uploader mb-4">
+      <h4>Выберите файл XLSX:</h4>
+      <input type="file" class="form-control file-uploader-input" id="file-uploader-input">
+    </div>
+    <div class="filter mb-3">
+      <h4>Поиск:</h4>
+      <form class="d-flex filter__form">
+        <input type="text" id="filter__letters" class="form-control" placeholder="Буквы">
+        <input type="number" id="filter__numbers" class="form-control" placeholder="Цифры">
+        <input type="number" id="filter__region" class="form-control" placeholder="Регион">
+        <button type="submit" class="btn btn-primary" id="filter-btn">Поиск</button>
+        <button type="reset" class="btn btn-danger" id="filter-reset">Сбросить</button>
+      </form>
+    </div>
+    <div class="result" id="result"></div>
+  </div>
+</body>
+</html>
