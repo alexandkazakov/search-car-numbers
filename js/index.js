@@ -62,7 +62,7 @@
         return;
       }
 
-      if (filterLettersInput.value !== '') numbersFiltered = filterNumbers(numbersFiltered, 'letters', filterLettersInput.value.toUpperCase());
+      if (filterLettersInput.value !== '') numbersFiltered = filterNumbers(numbersFiltered, 'letters', filterLettersInput.value.toUpperCase().trim());
       if (filterNumbersInput.value !== '') numbersFiltered = filterNumbers(numbersFiltered, 'numbers', filterNumbersInput.value);
       if (filterRegionInput.value !== '') numbersFiltered = filterNumbers(numbersFiltered, 'region', filterRegionInput.value);
 
